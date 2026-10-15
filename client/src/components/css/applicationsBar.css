@@ -1,0 +1,114 @@
+.application-wrapper{
+    margin:  30px auto;
+    max-width: 700px;
+    background-color: #fff;
+
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.title-application{
+    font-size: 16px;
+    font-weight: 600;
+}
+.apps-steps{
+    margin: 10px 0 0 0 ;
+}
+.step{
+    margin: 20px 0 0 0 ;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+
+}
+.step-header{
+    display: flex;
+    align-items: center;
+}
+.step-status{
+    margin: 0 0 0 0;
+    width: 27px;
+    height: 26px;
+    text-align: center;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid #44b60f;
+    color: #fff;
+
+
+}
+
+.step-status-archive{
+    margin: 0 0 0 0;
+    width: 25px;
+    height: 24px;
+    text-align: center;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #44b60f;
+    color: #fff;
+
+}
+.step-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.step-about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.step-text{
+    padding: 0 0 0 15px;
+}
+.step-text h1{
+    margin: 5px 0 0 0;
+    font-weight: 500;
+}
+.step-text p{
+    margin: 5px 0 0 0;
+}
+.step-button{
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    padding: 10px;    
+    font-size: 12px;
+    text-align: center;
+    width: 100px;
+    margin:  0 5px 0 15px ;
+    color: #fff;
+    font-weight: 500;   
+    transition: 0.3s;
+    cursor: pointer; 
+    background-color: #44b60fde;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.step-button:hover{
+    background-color: #44b60f;
+    box-shadow: 0 0 0 5px #44b60f79;
+    border: none;
+
+}
+
+/*  */
+
+
+
+.step-archive-status{
+    color: #44b60f;
+    font-weight: 600;
+}

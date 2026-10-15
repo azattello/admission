@@ -1,0 +1,121 @@
+/* Общие стили для макета */
+.prikaz-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .prikaz-layout {
+    display: flex;
+  }
+  
+  .main-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #eef1f5;
+  }
+  
+  .panel-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Стили контейнера таблицы */
+  .table-container {
+    margin-top: 20px;
+  }
+  
+  .students-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .students-table th,
+  .students-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+  }
+  
+  .students-table th {
+    background-color: #f4f6f8;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .students-table tr:hover {
+    background-color: #f9fbfc;
+  }
+  
+  /* Подсветка выбранной строки */
+  .students-table tr.selected {
+    background-color: #dceefb;
+  }
+  
+  /* Стили для кнопки создания группы */
+  .group-actions {
+    margin-top: 15px;
+    text-align: right;
+  }
+  
+  .btn-create-group {
+    padding: 8px 16px;
+    background-color: #0f5db6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-create-group:hover {
+    background-color: #084d92;
+  }
+  
+  /* Стили для секции созданных групп */
+  .groups-section {
+    margin-top: 30px;
+  }
+  
+  .groups-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .group-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .group-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
+  
+  .group-card h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .group-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  

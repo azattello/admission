@@ -1,0 +1,83 @@
+.Tab {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Высота таб-бара */
+    background-color: #F6F5F4;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.02); /* Тень для придания объема */
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 0; /* Внутренние отступы */
+
+    background: rgba(246, 245, 244, 0.49);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+    border: 1px solid rgba(133, 132, 132, 0.3);
+  }
+  
+  .tabbutton {
+    text-decoration: none;
+    color: #111111; /* Белый цвет текста */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .tabbutton:hover {
+    color: #007bff; /* Синий цвет при наведении */
+  }
+  
+  .tab-icon {
+    font-size: 20px; /* Размер иконки */
+  }
+  
+  .tab-label {
+    margin-top: 5px; /* Отступ между иконкой и текстом */
+    font-size: 12px;
+    color: #111111;
+  }
+  
+  .tabbutton.active .tab-icon {
+    color: #007bff; /* Синий цвет активной иконки */
+  }
+  
+  .tabbutton.active .tab-label {
+    color: #007bff; /* Синий цвет активного текста */
+  }
+  
+  .active-line {
+    position: absolute;
+    bottom: -8px; /* Линия под кнопкой */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%; /* Ширина линии, можно настроить по вкусу */
+    height: 3px; /* Высота линии */
+    background-color: #007bff; /* Синяя линия для выделения активной вкладки */
+    border-radius: 5px;
+    animation: slideIn 0.3s ease-in-out; /* Анимация при появлении */
+  }
+  
+  @keyframes slideIn {
+    from {
+      width: 0;
+    }
+    to {
+      width: 40%;
+    }
+  }
+  
+
+
+@media (max-width: 760px) {
+  .Tab{
+    display: flex;
+  }
+
+  
+}

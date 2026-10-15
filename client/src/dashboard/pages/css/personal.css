@@ -1,0 +1,249 @@
+.main-personal {
+    width:100%;
+    padding: 0 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.filters input,
+.filters select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.filters select {
+    width: 220px;
+}
+
+.applications,
+.students {
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.applications h2,
+.students h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.applications ul,
+.students ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.applications li,
+.students li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.applications li:hover,
+.students li:hover {
+    background-color: #f9fbfc;
+}
+
+.applications li span,
+.students li span {
+    margin-right: 10px;
+}
+
+.status-filter {
+    color: #0f5db6;
+    font-weight: bold;
+}
+
+.table-container {
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #333;
+}
+
+.employee-table th,
+.employee-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.employee-table th {
+    background-color: #f4f6f8;
+    color: #555;
+    font-weight: bold;
+}
+
+.employee-table tr:hover {
+    background-color: #f9fbfc;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #0f5db6de;
+}
+
+.edit-btn:hover {
+    background-color: #084d92;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    animation: fadeIn 0.3s ease;
+}
+
+
+
+
+
+.applications-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+}
+
+.applications-table th,
+.applications-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.applications-table th {
+    background-color: #f4f6f8;
+    color: #555;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.applications-table tr:hover {
+    background-color: #f9fbfc;
+}
+
+.applications-table td {
+    font-size: 14px;
+    color: #333;
+}
+
+.applications-table .status {
+    font-weight: bold;
+    color: #0f5db6;
+}
+
+.applications-table .status.in-progress {
+    color: #ff9800;
+}
+
+.applications-table .status.rejected {
+    color: #d9534f;
+}
+
+.applications-table .status.approved {
+    color: #4caf50;
+}
+
+.applications-table .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.applications-table .view-btn,
+.applications-table .reject-btn,
+.applications-table .approve-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.applications-table .view-btn {
+    background-color: #0f5db6de;
+}
+
+.applications-table .view-btn:hover {
+    background-color: #084d92;
+}
+
+.applications-table .reject-btn {
+    background-color: #d9534f;
+}
+
+.applications-table .reject-btn:hover {
+    background-color: #c9302c;
+}
+
+.applications-table .approve-btn {
+    background-color: #4caf50;
+}
+
+.applications-table .approve-btn:hover {
+    background-color: #388e3c;
+}

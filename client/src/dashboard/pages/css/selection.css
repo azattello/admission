@@ -1,0 +1,298 @@
+/* Общие стили для макета */
+.admin-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.admin-layout {
+  display: flex;
+}
+
+.main-panel {
+  flex: 1;
+  padding: 20px;
+  background-color: #eef1f5;
+}
+
+.panel-section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Фильтры и кнопка создания группы */
+.filter-bar {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-create-group {
+  padding: 8px 16px;
+  background-color: #0f5db6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-create-group:hover {
+  background-color: #084d92;
+}
+
+/* Обновлённые стили таблицы */
+.scores-section h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.scores-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.scores-table th,
+.scores-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.scores-table th {
+  background-color: #f4f6f8;
+  color: #555;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.scores-table tr:hover {
+  background-color: #f9fbfc;
+}
+
+/* Стили статуса */
+.status {
+  font-weight: bold;
+}
+
+.status.passed {
+  color: #4caf50;
+}
+
+.status.failed {
+  color: #d9534f;
+}
+
+/* Стили для действий */
+.actions .btn-view {
+  padding: 5px 10px;
+  background-color: #0f5db6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.actions .btn-view:hover {
+  background-color: #084d92;
+}
+
+/* Обновлённые стили карточек групп */
+.groups-section {
+  margin-top: 30px;
+}
+
+.groups-section h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.group-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.group-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.group-card h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.group-details {
+  margin-top: 10px;
+}
+
+.group-details label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.group-details input {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #f0efef;
+  border-radius: 4px;
+}
+
+/* Стили модального окна */
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 450px;
+  max-width: 90%;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-header h2 {
+  margin: 0 0 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.modal-body label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.modal-body input,
+.modal-body select {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-body fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.modal-body fieldset legend {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.students-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.students-list li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.checkbox-student-label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.checkbox-student {
+  margin-right: 10px;
+  transform: scale(1.1);
+  accent-color: #0f5db6;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-submit {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #388e3c;
+}
+
+.btn-cancel {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancel:hover {
+  background-color: #d32f2f;
+}

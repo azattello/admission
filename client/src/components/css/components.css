@@ -1,0 +1,237 @@
+/* header */
+
+.header-client-visit{
+    --header-bg-color: rgba(246, 245, 244, 0.49);
+
+    width: 100%;
+    height: 60px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    
+    background-color: var(--header-bg-color);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+    border: 1px solid rgba(133, 132, 132, 0.3);
+
+}
+
+.logo-header{
+    display: flex;
+    align-items: center;
+    background-color: var(--header-bg-color);
+
+}
+
+.logo-header img{
+    width: 50px;
+    border-radius: 10px;
+
+}
+
+.logo-header p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.buttons-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lang-header{
+    display: flex; 
+    align-items: center;
+    padding: 6px 8px ;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+    background-color: #F6F5F4;
+    border:1px solid rgba(0, 0, 0, 0.05) ;
+
+}
+.lang-header img{
+    width: 18px;
+}   
+.lang-header p{
+    margin: 0 0 0 5px;
+}
+
+
+
+.lang-header:hover{
+    background-color: #e9e9e9;
+
+}
+
+.lang-container{
+    position: relative;
+    display: inline-block;
+}
+/* Анимация плавного появления выпадающего меню */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Анимация плавного исчезновения выпадающего меню */
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+
+.lang-menu{
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 100%; /* Располагаем меню прямо под кнопкой */
+    right: 0;
+    border-radius: 4px;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out; /* Анимация появления */
+   
+}
+
+  /* Анимация для появления */
+  .lang-menu.fade-in {
+    animation: fadeIn 0.3s ease-in-out forwards;
+  }
+  
+  /* Анимация для исчезновения */
+  .lang-menu.fade-out {
+    animation: fadeOut 0.3s ease-in-out forwards;
+  }
+  
+
+.lang-menu button{
+    display: flex; 
+    align-items: center;
+    padding: 6px 8px ;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+    margin-top: 5px;
+    background-color: #fff;
+    border: 1px solid rgba(134, 134, 134, 0.3);
+
+}
+.lang-menu button:hover{
+    background-color: #e9e9e9;
+}
+
+.notification-button{
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0 0 0 5px;
+}
+.notification-icon{
+    padding: 6px 8px ;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #F6F5F4;
+    border:1px solid rgba(0, 0, 0, 0.05) ;
+
+}
+
+
+.auth-header-button{
+    background-color: #F6F5F4;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 8px ;
+    border-radius: 4px;
+    transition-duration: 0.3s;
+    margin: 0 0 0 15px;
+
+}
+
+.auth-header-button:hover{
+    background-color: #e9e9e9;
+
+}
+
+.reg-header-button{
+    padding: 6px 8px ;
+    margin: 0 0 0 15px;
+    font-size: 14px;
+    font-weight: 600;
+    
+    border-radius: 4px;
+    border: 1px solid #D9D9D9;
+    background-color: #fff;
+    transition-duration: 0.3s;
+}
+
+.reg-header-button:hover{
+    background-color: #e9e9e9;
+
+}
+
+.logout-header-button{
+    background-color: #000000;
+    color: #F6F5F4;
+    border: 1px solid  #000000;
+
+}
+
+.logout-header-button:hover{
+    background-color: #353434;
+
+}
+
+.lang-container-home{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .header-client-visit{
+        padding: 0 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    }
+    .reg-header-button{
+        margin: 0 0 0 5px;
+    }
+    .auth-header-button{
+        margin: 0 ;
+    }
+    .logo-header img{
+        margin:  0 5px 0  0 ;
+    }
+    .lang-header img{
+        width: 14px;
+    }
+    .logo-header p{
+        text-align: left;
+        line-height: 15px;
+    }
+    .logout-header-button{
+        display: none;
+    }
+    .lang-container{
+        display: none;
+    }
+    .lang-container-home{
+        display: inline-block;
+        margin: 15px 0 0 15px;
+
+    }
+   
+}
+
+

@@ -1,0 +1,96 @@
+/* Стили для предупреждения о не подтвержденном email */
+.verification-warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.verification-warning p {
+    margin: 0;
+}
+
+/* Стили для мини-статуса */
+.verification-warning-mini-status {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.verification-warning-mini-status p {
+    text-align: center;
+    font-size: 18px;
+    color: #dc3545;
+}
+
+/* Стили для кнопки отправки кода */
+.verification-warning button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.verification-warning button:hover {
+    background-color: #45a049;
+}
+
+.verification-warning button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Стили для ввода кода */
+.verification-input {
+    margin-top: 20px;
+}
+
+.verification-input input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.verification-input button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.verification-input button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для сообщения об ошибке */
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Стили для успешного состояния */
+.success-message {
+    color: #28a745;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}

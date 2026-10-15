@@ -1,0 +1,184 @@
+/* Header */
+.HeaderAdmin-wrapper{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(33, 33, 33, 0.902);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* Sidebar */
+.Sidebar-wrapper {
+  width: 240px;
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #000;
+  border-right: 1px solid #d9dfe4;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Свернутый сайдбар */
+.Sidebar-wrapper.collapsed {
+  width: 60px;
+  padding: 10px;
+}
+
+/* Основной контейнер */
+.structure-admin {
+  width: 100%;
+  display: flex;
+  background-color: #F0F4F7;
+}
+
+/* Навигационный контейнер */
+.nav-main {
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Стили для пунктов навигации */
+.nav-item {
+  padding: 10px 12px;
+  margin: 3px 0;
+  color: #798086;
+  border-radius: 5px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Активный пункт */
+.nav-item-active {
+  background-color: #E3F7F3;
+  color: #00897B;
+  font-weight: bold;
+}
+
+/* Ховер эффект */
+.nav-item:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #F0FCF9;
+}
+
+/* Блок с этапами */
+.stages-list {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+/* Кнопка "Этапы приемки" */
+.stages-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 12px;
+  margin: 3px 0;
+  color: #798086;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Ховер эффект для кнопки */
+.stages-toggle:hover {
+  background-color: #F0FCF9;
+  color: #000;
+}
+
+/* Иконка раскрытия этапов */
+.toggle-icon {
+  font-size: 20px;
+  transition: transform 0.4s ease;
+}
+
+/* Поворот иконки при открытии */
+.toggle-icon.rotated {
+  transform: rotate(180deg);
+}
+
+/* Кнопка выхода */
+.logout-button {
+  margin-top: auto;
+  padding: 10px 12px;
+  color: #d32f2f;
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Ховер эффект для выхода */
+.logout-button:hover {
+  background-color: #ffebee;
+  color: #b71c1c;
+}
+
+/* Кнопка сворачивания сайдбара */
+.toggle-sidebar {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Логотип */
+.sidebar-header {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.sidebar-logo {
+  width: 60px;
+  border-radius: 20px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* При свернутом состоянии */
+.Sidebar-wrapper.collapsed .sidebar-logo {
+  width: 40px;
+}
+
+.Sidebar-wrapper.collapsed .nav-item {
+  justify-content: center;
+  padding: 10px;
+}
+
+.Sidebar-wrapper.collapsed .nav-item span {
+  display: none;
+}
+
+.Sidebar-wrapper.collapsed .stages-list {
+  display: none;
+}
+
+
+.nav-item-content{
+  display: flex;
+  align-items: center;
+}
+
+
+.nav-item-content span{
+  margin: 0 0 0 5px;
+}

@@ -1,0 +1,83 @@
+.minimarket-main h1{
+    font-size: 18px;
+    font-weight: 500;
+    margin:  20px 0 0 25px;
+}
+
+.minimarket-main{    
+    margin:  30px auto;
+    max-width: 700px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+    
+}
+
+
+.minimarket-main:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.minimarket-wrapper{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding: 25px;
+    cursor: pointer;
+
+}
+
+.card-mini{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 15px ;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.card-mini img{
+    width: 150px;
+    margin: 0 20px ;
+}
+
+.card-buttons-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.card-title-mini{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.card-buttons-cart img{
+    width: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+.minimarket-wrapper::-webkit-scrollbar {
+    height: 10px; /* Измените значение на желаемую ширину */
+}
+  
+  .minimarket-wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+  
+}
+  
+  .minimarket-wrapper::-webkit-scrollbar-thumb {
+    background-color: #a7a7a7;
+  }

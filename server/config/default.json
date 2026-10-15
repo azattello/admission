@@ -1,0 +1,11 @@
+{
+    "serverPort" : 3001,
+    "dbUrl" : "",
+    "secretKey" : "",
+    
+   "cloudinary": {
+    "cloud_name": "",
+    "api_key": "",
+    "api_secret": ""
+  }
+}

@@ -1,0 +1,46 @@
+.miniApps{
+    margin:  30px auto;
+    max-width: 700px;
+    background-color: #f5f5f5;
+    background-color: #fff;
+
+    border-radius: 5px;
+    padding: 15px 25px 15px 35px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+    cursor: pointer;
+}
+
+.miniApps:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.miniApps-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.miniApps-p{
+    display: flex;
+    align-items: center;
+    
+    margin: 10px 0 0 0;
+    
+
+}
+.miniApps-p img{
+    width: 20px;
+}
+.miniApps-p p{
+    font-size: 12px;
+    margin:  0 0 0 5px;
+
+}

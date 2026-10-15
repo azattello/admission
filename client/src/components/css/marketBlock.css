@@ -1,0 +1,184 @@
+.market-wrapper{
+    margin:  30px auto;
+    max-width: 800px;
+    background-color: #fff;
+
+}
+
+.market-header-wrapper{
+    margin:  0px auto;
+    max-width: 800px;
+    background-color: #fff;
+
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 20px;
+}
+
+.search-bar img{
+    width: 20px;
+    height:  20px;
+}
+
+
+.search-bar input{
+    width: 100%;
+    margin:  0 0 0 10px;
+}
+
+.market-buttons{
+    padding: 0 20px;
+}
+.market-buttons img{
+    cursor: pointer;
+    width: 22px;
+    margin: 0 5px;
+    color: red; /* Цвет задается через currentColor */
+
+}
+
+/* market-cards-wrapper */
+
+.market-cards-wrapper{
+    margin:  20px auto ;
+    max-width: 800px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* 
+.card img{
+    width: 150px;
+    margin: 0 20px 0 40px;
+} */
+
+.cards-image{
+    height: 150px;
+    margin: 0 20px 0 40px;
+
+}
+
+.card-content{
+    padding:  20px 20px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card-content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-title-buttons{
+    display: flex;
+    margin: 40px 0 0 0;
+    justify-content: space-between;
+}
+
+
+
+.card-text-button{
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+
+.card-content-more{
+    padding: 20px 0 0px 0px;
+
+}
+
+.card-text{
+    color: #161616;
+}
+
+.card-buttons-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.card-buttons-cart img{
+    width: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+  
+
+
+@media (max-width: 760px) {
+    .card{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0 0 0;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .cards-image{
+        height: 140px;
+        margin: 15px;
+    }
+
+    .card-content{
+        padding:  10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .card-buttons-cart img{
+        width: 25px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    .market-buttons{
+        display: flex;
+    }
+    
+    .card-title-buttons{
+        display: flex;
+        margin: 20px 0 0 0;
+        justify-content: space-between;
+    }
+
+    
+  }

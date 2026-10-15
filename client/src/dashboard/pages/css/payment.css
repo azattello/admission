@@ -1,0 +1,232 @@
+/* Общие стили для макета */
+.admin-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .admin-layout {
+    display: flex;
+  }
+  
+  .main-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #eef1f5;
+  }
+  
+  .panel-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Стили таблицы проверки оплаты */
+  .payments-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .payments-table th,
+  .payments-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+  }
+  
+  .payments-table th {
+    background-color: #f4f6f8;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .payments-table tr:hover {
+    background-color: #f9fbfc;
+  }
+  
+  /* Стили для статуса оплаты */
+  .status {
+    font-weight: bold;
+  }
+  
+  .status.approved {
+    color: #4caf50;
+  }
+  
+  .status.rejected {
+    color: #d9534f;
+  }
+  
+  .status.pending {
+    color: #ff9800;
+  }
+  
+  /* Стили для кнопки действий */
+  .actions .btn-review {
+    padding: 5px 10px;
+    background-color: #0f5db6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .actions .btn-review:hover {
+    background-color: #084d92;
+  }
+  
+  /* Стили модального окна */
+  .modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-box {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 450px;
+    max-width: 90%;
+    padding: 20px;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .modal-header h2 {
+    margin: 0 0 15px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .modal-body {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .student-info p {
+    margin: 5px 0;
+  }
+  
+  /* Стили для блока оплаты */
+  .payment-items {
+    margin-top: 15px;
+  }
+  
+  .payment-item {
+    margin-bottom: 10px;
+  }
+  
+  .payment-item p {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .download-receipt {
+    font-size: 14px;
+    color: #0f5db6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .download-receipt:hover {
+    color: #084d92;
+  }
+  
+  /* Стили для выбора статуса */
+  .status-selection {
+    margin: 15px 0;
+  }
+  
+  .radio-label {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .radio-label input {
+    margin-right: 5px;
+    transform: scale(1.1);
+    accent-color: #0f5db6;
+  }
+  
+  /* Стили для поля комментария */
+  .comment-field label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .comment-field textarea {
+    width: 100%;
+    height: 80px;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  /* Стили футера модального окна */
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .btn-submit {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #388e3c;
+  }
+  
+  .btn-cancel {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #d32f2f;
+  }
+  
